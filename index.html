@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fazil & Fathima Hasna - Wedding Invitation</title>
+  <!-- Fonts matching the reference elegance -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="no-scroll">
+  <!-- ENVELOPE OVERLAY -->
+  <div id="envelope-overlay" class="envelope-overlay">
+    <div class="envelope-container">
+
+      <!-- Envelope Folds -->
+      <div class="envelope-left"></div>
+      <div class="envelope-right"></div>
+      <div class="envelope-bottom"></div>
+      <div class="envelope-top" id="envelope-flap"></div>
+
+      <!-- Center Line -->
+      <div class="center-line" id="center-line"></div>
+
+      <!-- Wax Seal -->
+      <button id="wax-seal" class="wax-seal">
+        <span class="seal-text">Save<br>the<br>Date</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Container for falling petals -->
+  <div id="petals-container"></div>
+
+  <main class="page-content">
+
+    <!-- SECTION 1: HERO (Cinematic Background) -->
+    <section class="section hero-section">
+      <div class="frame-border">
+        <div class="corner-floral top-left">❦</div>
+        <div class="corner-floral top-right">❦</div>
+        <div class="corner-floral bottom-left">❦</div>
+        <div class="corner-floral bottom-right">❦</div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content animate-up">
+        <div class="hero-bismillah">
+          <p class="bismillah-text animate-up" style="color: var(--gold); margin-bottom: 0;">﷽</p>
+        </div>
+
+        <p class="hero-request">WE REQUEST THE HONOUR OF YOUR PRESENCE</p>
+
+        <h1 class="hero-names">
+          Fazil<br>
+          <span class="hero-and">&</span><br>
+          Fathima Hasna
+        </h1>
+
+        <p class="hero-married">ARE GETTING MARRIED</p>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="pill-indicator">
+          <div class="pill-dot"></div>
+        </div>
+        <span>SCROLL DOWN</span>
+      </div>
+
+      <div class="couple-illustration animate-up delay-2">
+        <!-- User uploaded Couple illustration -->
+        <img src="/couple.png" alt="Couple">
+      </div>
+    </section>
+
+    <!-- WAVE: Cream to Maroon -->
+    <div class="wave-divider wave-down" style="background-color: var(--cream);">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="var(--maroon)" d="M0,0 C480,100 960,100 1440,0 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+
+    <!-- SECTION 2: QUOTE & SAVE THE DATE (Maroon) -->
+    <section class="section maroon-bg quote-section">
+      <div class="content-wrapper">
+        <p class="quran-quote scroll-reveal">
+          "And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility
+          with them, and He has put love and mercy between your hearts."
+        </p>
+
+        <div class="save-the-date scroll-reveal delay-1">
+          <h2>Save the Date</h2>
+          <div class="date-card">
+            <span class="date-month">August</span>
+            <span class="date-day">11</span>
+            <span class="date-year">2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAVE: Maroon to Cream -->
+    <div class="wave-divider wave-up">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="var(--cream)" d="M0,100 C480,0 960,0 1440,100 L1440,0 L0,0 Z"></path>
+      </svg>
+    </div>
+
+    <!-- SECTION 3: INVITATION (Cream) -->
+    <section class="section cream-bg invitation-section">
+      <div class="content-wrapper">
+        <div class="invitation-card scroll-reveal">
+          <h3 class="card-header">In the name of Allah</h3>
+          <p class="card-text">With immense joy and gratitude, we warmly welcome you to join us and bless the beginning
+            of our new journey together.</p>
+
+          <div class="parents-grid">
+            <div class="groom-side">
+              <span class="role">Groom</span>
+              <h2 class="name-cursive">Fazil</h2>
+              <span class="son-of">Son of</span>
+              <p class="parents-name">Mr. Kareem & Mrs. Sakeena Kareem</p>
+              <p class="parents-address" style="font-size: 0.8rem; margin-top: 0.5rem; color: #777;">Valiyakthkarakatt
+                House,<br>Nalapatt Road, Punnayurkulam<br>Mob: 9995138671, 8606561263</p>
+            </div>
+            <div class="and-divider">and</div>
+            <div class="bride-side">
+              <span class="role">Bride</span>
+              <h2 class="name-cursive">Fathima Hasna</h2>
+              <span class="son-of">Daughter of</span>
+              <p class="parents-name">Mr. Rafi Ahamed & Mrs. Farveen.B</p>
+              <p class="parents-address" style="font-size: 0.8rem; margin-top: 0.5rem; color: #777;">Arafah Nanadath
+                Paramba,<br>AG Road, Calicut. 11</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TIMELINE & VENUE (Cream) -->
+    <section class="section cream-bg timeline-venue-section">
+      <div class="content-wrapper">
+        <h2 class="section-title scroll-reveal">Event Timeline</h2>
+
+        <div class="date-banner scroll-reveal">
+          <span class="primary-date">Tuesday, 11 August 2026</span>
+          <span class="secondary-date">1448 Safar 28</span>
+          <div class="floral-divider">❦</div>
+        </div>
+
+        <div class="timeline scroll-reveal delay-1">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Reception & Welcome</h3>
+              <p class="time">11:30 AM — 2:30 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title scroll-reveal" style="margin-top: 4rem;">Venue</h2>
+        <p class="venue-address scroll-reveal">TMK Regency, Guruvayur Althara, Palakkad - Ponnani Road,<br>near
+          Corporation Bank, Vadakkekad, Kerala 679562</p>
+        <div class="map-container scroll-reveal delay-1">
+          <iframe
+            src="https://maps.google.com/maps?q=TMK%20Regency%2C%20Guruvayur%20Althara%2C%20Palakkad%20-%20Ponnani%20Road%2C%20near%20Corporation%20Bank%2C%20Vadakkekad%2C%20Kerala%20679562&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAVE: Cream to Maroon -->
+    <div class="wave-divider wave-down">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="var(--maroon)" d="M0,0 C480,100 960,100 1440,0 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+
+    <!-- SECTION 5: COUNTDOWN & GALLERY (Maroon) -->
+    <section class="section maroon-bg final-section">
+      <div class="content-wrapper">
+        <h2 class="section-title text-light scroll-reveal">Counting Down</h2>
+        <div class="countdown-container scroll-reveal delay-1" id="countdown">
+          <div class="time-box"><span id="days">00</span>
+            <p>Days</p>
+          </div>
+          <div class="time-box"><span id="hours">00</span>
+            <p>Hours</p>
+          </div>
+          <div class="time-box"><span id="minutes">00</span>
+            <p>Minutes</p>
+          </div>
+          <div class="time-box"><span id="seconds">00</span>
+            <p>Seconds</p>
+          </div>
+        </div>
+
+        <div class="polaroid-gallery scroll-reveal delay-2">
+          <div class="polaroid rotate-left">
+            <img
+              src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Ring">
+            <p>Together</p>
+          </div>
+          <div class="polaroid rotate-right">
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Cake">
+            <p>Forever</p>
+          </div>
+          <div class="polaroid rotate-left">
+            <img
+              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+              alt="Hands">
+            <p>Blessed</p>
+          </div>
+        </div>
+
+        <div class="footer scroll-reveal">
+          <p class="gratitude">With hearts full of joy and gratitude, we request the honour of your presence as we
+            celebrate this blessed union.</p>
+          <p class="best-wishes">Best wishes from</p>
+          <p class="family">FAMILY & FRIENDS</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Floating Music Button & Audio -->
+  <button class="music-btn" aria-label="Play Music">
+    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+      <path d="M9 18V5l12-2v13"></path>
+      <circle cx="6" cy="18" r="3"></circle>
+      <circle cx="18" cy="16" r="3"></circle>
+    </svg>
+  </button>
+  <audio id="bg-music" loop>
+    <!-- You will need to drop your mp3 file into the public folder and name it music.mp3 -->
+    <source src="/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
