@@ -97,7 +97,7 @@ h3,
 /* 1. Hero Section (Cinematic) */
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   text-align: center;
   overflow: hidden;
 }
@@ -111,7 +111,7 @@ h3,
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   z-index: 10;
 }
 
@@ -219,7 +219,8 @@ h3,
 /* Scroll Pill */
 .hero-scroll {
   position: absolute;
-  bottom: 45px;      /* Adjust this value */
+  bottom: 45px;
+  /* Adjust this value */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -238,10 +239,7 @@ h3,
   width: 45vw;
   max-width: 400px;
   min-width: 250px;
-  mix-blend-mode: multiply; /* Fixes white background from couple.png */
   line-height: 0;
-
-  /* Removes inline gap */
 }
 
 .couple-illustration img {
@@ -805,7 +803,7 @@ h3,
   }
 
   .hero-names {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Shrunk from 3rem to prevent wrapping on tiny screens */
     margin-bottom: 1.5rem;
     line-height: 1;
   }
@@ -822,6 +820,7 @@ h3,
 
   .hero-married {
     font-size: 1rem;
+    margin-bottom: 30px; /* Reduced from 80px to prevent the screen from scrolling */
   }
 
   .hero-scroll {
@@ -1034,10 +1033,12 @@ h3,
     max-width: 250px;
     margin-inline: auto;
   }
+
   .time-box {
     width: 100%;
     height: 90px;
   }
+
   .time-box span {
     font-size: 2.2rem;
   }
